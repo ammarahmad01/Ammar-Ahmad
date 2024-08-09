@@ -397,10 +397,10 @@ html::-webkit-scrollbar-thumb {
                                 padding: 2em; /* Further reduce padding for mobile */
                             }
                             .service-info h4 {
-                                font-size: 1.8rem; /* Further adjust font size for mobile */
+                                font-size: 2.5rem; /* Further adjust font size for mobile */
                             }
                             .service-info p {
-                                font-size: 1.2rem; /* Further adjust font size for mobile */
+                                font-size: 1.6rem; /* Further adjust font size for mobile */
                             }
                         }
 
