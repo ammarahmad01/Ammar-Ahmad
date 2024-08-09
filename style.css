@@ -313,12 +313,13 @@ html::-webkit-scrollbar-thumb {
                 
                 .services {
                     background: var(--second-bg-color) ;
+                    padding: 50px 20px;
                     }
                     .heading{
                         text-align: center;
-                        font-size: 36px;
-                        padding: 50px 20px;
-                        margin-bottom: 40px;
+                        font-size: 2.5rem;
+                        padding: 40px 10px;
+                        margin-bottom: 30px;
                     }
                     .services-container {
                     display: grid;
@@ -344,41 +345,62 @@ html::-webkit-scrollbar-thumb {
                         .service-box .service-info {
                         display: flex;
                         flex-direction: column;
-                        text-align: left;
+                        text-align: center;
                         max-height: 200px;
                         justify-content: center;
                         align-items: center;
-                        padding: 5em;
+                        padding: 3em;
                         
                         }
                         
                         .service-info h4 {
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                         font-weight: 500;
                         margin-bottom: 1rem;
                         }
                         
                         .service-info p{
-                            font-size: 1.6rem;
+                            font-size: 1.5rem;
                             font-weight: 400;
                             max-height: 100px;
                             margin: auto;
                         }
                         
-                        @media (max-width:991px) {
+                       @media (max-width: 991px) {
                             section {
-                            padding: 10rem 3% 2rem;
+                                padding: 8rem 2% 1rem; /* Adjust padding for better fit on smaller screens */
                             }
-                            .services{
-                            padding-bottom: 7rem;
+                            .services {
+                                padding-bottom: 6rem;
                             }
                         }
-                            @media (max-width:895px){
-                            .services h2{
-                            margin-bottom: 3rem;
+                        
+                        @media (max-width: 768px) {
+                            .services h2 {
+                                margin-bottom: 2rem; /* Adjust margin for better fit on smaller screens */
                             }
                             .services-container {
-                             grid-template-columns: repeat(1,1fr);
+                                grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for tablets */
+                                gap: 1.5rem; /* Reduce gap for better fit on smaller screens */
+                            }
+                        }
+                        
+                        @media (max-width: 480px) {
+                            .services-container {
+                                grid-template-columns: repeat(1, 1fr); /* Change to 1 column for mobile */
+                                gap: 1rem; /* Reduce gap for better fit on smaller screens */
+                            }
+                            .service-box {
+                                height: 250px; /* Reduce height for better fit on smaller screens */
+                            }
+                            .service-box .service-info {
+                                padding: 2em; /* Further reduce padding for mobile */
+                            }
+                            .service-info h4 {
+                                font-size: 1.8rem; /* Further adjust font size for mobile */
+                            }
+                            .service-info p {
+                                font-size: 1.2rem; /* Further adjust font size for mobile */
                             }
                         }
 
