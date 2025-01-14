@@ -263,19 +263,19 @@ html::-webkit-scrollbar-thumb {
 
                 @keyframes words{
                     0%,20%{
-                        content: 'Web Developer';
+                        content: 'Computer Scientist';
                     }
                     21%,40%{
                         content: 'Software Developer';
                     }
                     41%,60%{
-                        content: 'Web Designer';
+                        content: 'Web Developer';
                     }
                     61%,80%{
                         content: 'Photographer';
                     }
                     81%,100%{
-                        content: 'Cricketer';
+                        content: 'Social Media Manager';
                     }
                 }
 
